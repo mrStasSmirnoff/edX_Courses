@@ -1,0 +1,10 @@
+Key Points (GROUPING)
+
+- Use GROUPING SETS to define custom groupings.
+- Use ROLLUP to include subtotals and a grand total for hierarchical groupings.
+- Use CUBE to include all possible groupings.
+
+Key Points (PIVOTING)
+
+- Use PIVOT to re-orient a rowset by generating mulitple columns from values in a single column.
+- Use UNPIVOT to re-orient mulitple columns in a an existing rowset into a single column.

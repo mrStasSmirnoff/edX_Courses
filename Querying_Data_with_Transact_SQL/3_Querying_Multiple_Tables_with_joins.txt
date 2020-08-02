@@ -1,0 +1,29 @@
+Key Points (Joins):
+
+- Joins are used to match rows in one table to rows in another table.
+- The query engine supports two ways to define joins: the ANSI SQL-92 syntax (in which the join is specified in the FROM clause) and the older ANSI SQL-89 syntax (in which the join is specified in the WHERE clause). The ANSI SQL-92 syntax is the preferred approach.
+
+
+Key Points(Inner joins):
+
+- Inner joins return only rows where a match can be found in both tables.
+- Inner joins that match rows based on columns containing the same value in both tables are sometimes referred to as equi-joins.
+
+Key Points(Outer joins):
+
+- Outer Joins (Return all rows from one table and any mathing rows from second table)
+- Use a Left Outer Join to include all rows from the first table and values from matched rows in the second table. Columns in the second table for which no matching rows exist are populated with NULLs.
+- Use a Right Outer Join to include all rows from the second table and values from matched rows in the first table. Columns in the first table for which no matching rows exist are populated with NULLs.
+- Use a Full Outer Join to include all rows from the first and second tables. Columns in the either table for which no matching rows exist are populated with NULLs.
+
+Key Points(Cross joins):
+
+- A cross join returns a Cartesian product that includes every combination of the selected columns from both tables (combine each row from first table with each row from second table).
+- While not commonly used in typical application processing, cross joins can be useful in some specialized scenarios - such as generating test data.
+- There is no need for ON clause, since we join everything with everything.
+
+Key Points (Self joins):
+
+- The idea is to compare rows in same table to each other .
+- A self-join is an inner, outer, or cross join that matches rows in a table to other rows in the same table. 
+- When defining a self-join, you must specify an alias for at least one instance of the table being joined.

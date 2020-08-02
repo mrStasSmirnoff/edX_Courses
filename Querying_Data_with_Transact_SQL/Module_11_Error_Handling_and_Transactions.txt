@@ -1,0 +1,20 @@
+Key Points (RAISERROR, THROW)
+
+- System errors have pre-defined numbers, messages, severity levels, and other characteristics that you can use to troubleshoot issues.
+- You can use RAISERROR and THROW to raise custom errors.
+- Review the documentation on RAISERROR and THROW in the Transact-SQL Language Reference.
+
+Key Points (TRY and CATCH)
+
+- Use TRY...CATCH blocks in your Transact-SQL code to catch and handle exceptions.
+- A common exception handling pattern is to log the error, and then if the operation cannot be completed successfully, throw it (or a new custom error) to the calling application.
+
+Key Points (TRANSACTIONS)
+
+- Transactions are used to protect data integrity by ensuring that all data changes within a transaction succeed or fail as a unit.
+- Individual Transact-SQL statements are inherently treated as transactions, and you can define explicit transactions that encompass mulitple statements.
+- Use the BEGIN TRANSACTION, COMMIT TRANSACTION, and ROLLBACK TRANSACTION statements to manage transactions.
+- Enable the XACT_ABORT option to automatically rollback all transactions if an exception occurs.
+- Use the @@TRANCOUNT system variable and XACT_STATE system function to determine transaction status.
+- Review the documentation on Transaction Statements, @@TRANCOUNT, and XACT_STATE in the Transact-SQL Language Reference.
+- For a detailed explanation of how the transaction log is used for data updates and recovery, see the Technet Magazine article Understanding Logging and Recovery in SQL Server by Paul S. Randall.

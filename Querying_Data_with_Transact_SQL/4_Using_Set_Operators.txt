@@ -1,0 +1,14 @@
+Key Points (Unions)
+
+- Use UNION to combine the rowsets returned by mulitple queries.
+- Each unioned query must return the same number of columns with compatible data types.
+- By default, UNION eliminates duplicate rows. Specify the ALL option to include duplicates (or to avoid the overhead of checking for duplicates when you know in advance that there are none). UNION ALL retain duplicates during query processing.
+
+Key Points (INTERSECT)
+
+- INTERSECT returns only distinct rows that appear in both result sets. It is kind of similar to an inner join (where we are extending the number of columns by bringing columns back from multiple tables), but in this case we are extending rows. Therefore, use INTERSECT to return only rows that are returned by both queries.
+- EXCEPT returns only distinct rows that appear in the first set but the second (order in which sets are specified matters). Hence, use EXCEPT to return rows from the first query that are not returned by the second query.
+
+
+
+

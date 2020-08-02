@@ -1,0 +1,22 @@
+Key Points (Views)
+
+- Views are database objects that encapsulate SELECT queries.
+- You can query a view in the same way as a table, however there are some considerations for updating them.
+
+Key Points (Temporary Tables and Variables)
+
+- Temporary tables are prefixed with a # symbol (You can also create global temporary tables that can be accessed by other processes by prefixing the name with ##)
+- Local temporary tables are automatically deleted when the session in which they were created ends. Global temporary tables are deleted when the last user sessions referencing them is closed.
+- Table variables are prefixed with a @ symbol.
+- Table variables are scoped to the batch in which they are created.
+
+Key Points(TVF)
+
+- Table-Valued Functions (TVFs) are functions that return a rowset.
+- TVFs can be parameterized.
+
+Key Points(Common Table Expressions)
+
+- A derived table is a subquery that generates a multicolumn rowset. You must use the AS clause to define an alias for a derived query.
+- Common Table Expressions (CTEs) provide a more intuitive syntax or defining rowsets than derived tables, and can be used mulitple times in the same query.
+- You can use CTEs to define recursive queries.

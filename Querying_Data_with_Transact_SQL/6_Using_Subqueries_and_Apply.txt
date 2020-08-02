@@ -1,0 +1,14 @@
+Key Points (Subqueries)
+
+- Subqueries are Transact-SQL queries nested within an outer query.
+- Scalar subqueries return a single value.
+- Multi-valued subqueries return a single-column rowset.
+
+Key Points (Correlated subqueries)
+
+- Correlated subqueries reference objects in the outer query.
+
+Key Points (APPLY)
+
+- The APPLY operator enables you to execute a table-valued function for each row in a rowset returned by a SELECT statement. Conceptually, this approach is similar to a correlated subquery.
+- CROSS APPLY returns matching rows, similar to an inner join. OUTER APPLY returns all rows in the original SELECT query results with NULL values for rows where no match was found.

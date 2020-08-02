@@ -1,0 +1,26 @@
+ Key Points (BATCH, VARIABLES)
+
+- A batch defines a group of Transact-SQL command submitted by a client application for execution. Some commands can only be executed at the start of a new batch, and variable values cannot span batches.
+- Use comments to document your Transact-SQL code. Inline comments are prefixed by --, and multi-line comment blocks are enclosed in /* and */.
+- Declare variables by using the DECLARE keyword, specifying a name (prefixed with @) and a data type. You can optionally assign an initial value.
+- Assign values to variables by using the SET keyword or in a SELECT statement.
+- Review the documentation on --, /*..*/, and  Variables in the Transact-SQL Language Reference (https://docs.microsoft.com/en-us/sql/t-sql/language-elements/variables-transact-sql?redirectedfrom=MSDN&view=sql-server-ver15).
+
+
+Key Points (IF ELSE)
+
+- Use the IF keyword to execute a task based on the results of a conditional test.
+- Use an ELSE clause if you need to execute an alternative task if the conditional test returns false.
+Enclose mulitple statements in an IF or ELSE clause between BEGIN and END keywords.
+
+Key Points (LOOPS)
+
+- Use a WHILE loop if you need to repeat one or more statements until a specified condition is true.
+- Use BREAK and CONTINUE to exit or restart the loop.
+- Avoid using loops to iteratively update or retrieve single records - in most cases, you should use set-based operations to retrieve and modify data.
+
+Key Points(STORED PROCEDURES)
+
+- Use stored procedures to encapsulate Transact-SQL code in a reusable database objects.
+- You can define parameters for a stored procedure, and use them as variables in the Transact-SQL code it contains.
+- Stored procedures can return rowsets (usually the results of a SELECT statement). They can also return output parameters, and they always return a return value, which is used to indicate status.
